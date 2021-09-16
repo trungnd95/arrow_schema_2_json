@@ -1,0 +1,41 @@
+\hypertarget{_schema_json_conv_8h_source}{}\doxysection{Schema\+Json\+Conv.\+h}
+\label{_schema_json_conv_8h_source}\index{src/SchemaJsonConv.h@{src/SchemaJsonConv.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef SCHEMAJSONCONV\_H}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define SCHEMAJSONCONV\_H}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{comment}{//-\/-\/-\/-\/-\/ Include libs}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <arrow/dataset/dataset.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <nlohmann/json.hpp>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceservice}{service}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keyword}{class }\mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keyword}{public}:}
+\DoxyCodeLine{34             \textcolor{keyword}{static} std::string \mbox{\hyperlink{classservice_1_1_schema_json_conv_a20a61f896135f9d375fe28b622648dc3}{schema2JsonStr}}(\textcolor{keyword}{const} std::shared\_ptr<arrow::Schema>\& t\_arrSchema);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41             \textcolor{keyword}{static} std::shared\_ptr<arrow::Schema> \mbox{\hyperlink{classservice_1_1_schema_json_conv_a70549ac1bfc57f17884a7ac905b98c2e}{jsonStr2Schema}}(\textcolor{keyword}{const} std::string\& t\_jsonStr);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{44             \textcolor{comment}{//-\/-\/-\/-\/ Prevent create, copy object because of this class is truely}}
+\DoxyCodeLine{45             \textcolor{comment}{//     helper one, do not need create instance that waste memory.}}
+\DoxyCodeLine{46             \mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}();}
+\DoxyCodeLine{47             \mbox{\hyperlink{classservice_1_1_schema_json_conv}{\string~SchemaJsonConv}}();}
+\DoxyCodeLine{48             \mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}(\textcolor{keyword}{const} \mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}\& ) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{49             \mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}\& operator=(\textcolor{keyword}{const} \mbox{\hyperlink{classservice_1_1_schema_json_conv}{SchemaJsonConv}}\& ) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keyword}{private}:}
+\DoxyCodeLine{52             \textcolor{keyword}{static} std::shared\_ptr<arrow::Schema> ms\_lastSchemaCache;}
+\DoxyCodeLine{53             \textcolor{keyword}{static} std::string ms\_lastJsonCache;}
+\DoxyCodeLine{54     \};}
+\DoxyCodeLine{55 \}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SCHEMAJSONCONV\_H}}
+
+\end{DoxyCode}

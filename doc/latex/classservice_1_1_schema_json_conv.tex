@@ -1,0 +1,63 @@
+\hypertarget{classservice_1_1_schema_json_conv}{}\doxysection{service\+::Schema\+Json\+Conv Class Reference}
+\label{classservice_1_1_schema_json_conv}\index{service::SchemaJsonConv@{service::SchemaJsonConv}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classservice_1_1_schema_json_conv_a20a61f896135f9d375fe28b622648dc3}{schema2\+Json\+Str}} (const std\+::shared\+\_\+ptr$<$ arrow\+::\+Schema $>$ \&t\+\_\+arr\+Schema)
+\begin{DoxyCompactList}\small\item\em Api help convert apache arrow schema to Json string format. \end{DoxyCompactList}\item 
+static std\+::shared\+\_\+ptr$<$ arrow\+::\+Schema $>$ \mbox{\hyperlink{classservice_1_1_schema_json_conv_a70549ac1bfc57f17884a7ac905b98c2e}{json\+Str2\+Schema}} (const std\+::string \&t\+\_\+json\+Str)
+\begin{DoxyCompactList}\small\item\em Api help convert from Json string to Apache arrow schema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classservice_1_1_schema_json_conv_a9e45e7cfdada5615d3ab37317b97d1ed}\label{classservice_1_1_schema_json_conv_a9e45e7cfdada5615d3ab37317b97d1ed}} 
+{\bfseries Schema\+Json\+Conv} (const \mbox{\hyperlink{classservice_1_1_schema_json_conv}{Schema\+Json\+Conv}} \&)=delete
+\item 
+\mbox{\Hypertarget{classservice_1_1_schema_json_conv_a5aeaea31ec91b61449417d031a3e05e5}\label{classservice_1_1_schema_json_conv_a5aeaea31ec91b61449417d031a3e05e5}} 
+\mbox{\hyperlink{classservice_1_1_schema_json_conv}{Schema\+Json\+Conv}} \& {\bfseries operator=} (const \mbox{\hyperlink{classservice_1_1_schema_json_conv}{Schema\+Json\+Conv}} \&)=delete
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classservice_1_1_schema_json_conv_a70549ac1bfc57f17884a7ac905b98c2e}\label{classservice_1_1_schema_json_conv_a70549ac1bfc57f17884a7ac905b98c2e}} 
+\index{service::SchemaJsonConv@{service::SchemaJsonConv}!jsonStr2Schema@{jsonStr2Schema}}
+\index{jsonStr2Schema@{jsonStr2Schema}!service::SchemaJsonConv@{service::SchemaJsonConv}}
+\doxysubsubsection{\texorpdfstring{jsonStr2Schema()}{jsonStr2Schema()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ arrow\+::\+Schema $>$ service\+::\+Schema\+Json\+Conv\+::json\+Str2\+Schema (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{t\+\_\+json\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Api help convert from Json string to Apache arrow schema. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+json\+Str} & Json string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arrow\+::\+Schema is converted from json string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classservice_1_1_schema_json_conv_a20a61f896135f9d375fe28b622648dc3}\label{classservice_1_1_schema_json_conv_a20a61f896135f9d375fe28b622648dc3}} 
+\index{service::SchemaJsonConv@{service::SchemaJsonConv}!schema2JsonStr@{schema2JsonStr}}
+\index{schema2JsonStr@{schema2JsonStr}!service::SchemaJsonConv@{service::SchemaJsonConv}}
+\doxysubsubsection{\texorpdfstring{schema2JsonStr()}{schema2JsonStr()}}
+{\footnotesize\ttfamily std\+::string service\+::\+Schema\+Json\+Conv\+::schema2\+Json\+Str (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ arrow\+::\+Schema $>$ \&}]{t\+\_\+arr\+Schema }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Api help convert apache arrow schema to Json string format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+arr\+Schema} & Arrow schema to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+json string is converted from schema 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Schema\+Json\+Conv.\+h\item 
+src/Schema\+Json\+Conv.\+cpp\end{DoxyCompactItemize}
